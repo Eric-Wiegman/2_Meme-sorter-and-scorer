@@ -209,4 +209,7 @@ builds the project and retrieves plugins needed for that build. However,
   b. org.testng:testng:6.8.8
   </pre>
   
-  And then you could run the TestNG XML Suite file found at /src/main/resources
+  And then you could run the TestNG XML Suite file found at /src/main/resources.
+  
+  If you want to run that via command-line, please consult the StackOverflow 
+  page http://stackoverflow.com/questions/18800333/unable-to-execute-testng-suite-file-via-command-line
