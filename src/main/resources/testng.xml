@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="InternetMeme">
+    <test name="InternetMeme">
+        <classes>
+            <class name="TestMemeExercise">
+                <methods>
+                    <include name="checkOutput" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
