@@ -16,9 +16,9 @@ TABLE OF CONTENTS
 1. Introduction
 ---------------------------------------------------------------------------
 This is the README.md file for the Comcast Silicon Valley Test Engineering 
-    interview exercise presented to Eric Wiegman as part of his consideration
-     for the _""_ position at Comcast. The choice was made to program the "2.
-      Meme Sorter and Scorer" exercise.
+interview exercise presented to Eric Wiegman as part of his consideration
+for the _"Application Test Engineer"_ position at Comcast.
+The choice was made to program the "2. Meme Sorter and Scorer" exercise.
 
 2. Statement of Work
 ------------------------------
@@ -30,14 +30,13 @@ This is the README.md file for the Comcast Silicon Valley Test Engineering
  the meme name and the other the lulz factor.
 
  Maven is used as the tool to perform the build and deploy the test (running 
- the TestNG suite with the surefire plugin. There seems to be a problem with 
+ the TestNG suite with the surefire plugin). There seems to be a problem with 
  my POM file, maven, or something related, which I am not able to solve. The 
  surefile plugin is correctly defined in the POM file, but it is not being 
  recognized by maven. Also, the 'mvn test' command line is not only not 
  running the test, but it is also running some python script (presumably to 
  do diagnostics) but that script refuses to run due to an invalid python syntax.
- 
- 
+
 
 3. Specified Project Requirements
 -------------------------------------------------------------
@@ -49,13 +48,23 @@ same json file.
 
 3.1. Notes on Requirements
 --------------------------
-1. .
-6. This file contains instructions on how to run the test from command line.
+1. The list of memes was retrieve from http://mashable.com/2012/07/02/best-cat-memes-ever
+2. The associated "lulz" score (from 1 to 10) was not specified how one would
+ determine the value -- so I just generated a random integer in the given range.
+3. This file contains instructions on how to run the test from command line 
+(although I seem to be having a problem, so you might need to set up your IDE
+ to run the TestNG XML file).
 
 
 4. The following is a general outline of what was automated:
 ---------------------------------------------------------------------------
-1. 
+1. Section 3 explains what was automated. For more details, the code is rich 
+in inline documentation and JavaDoc ... so it should be relatively obvious.
+2. The TestNG test is a fairly simple validation that the memes are outputted
+ in an alphabetical (ascending) fashion and now the JSON file has an associated 
+ rating ("lulz" factor). If, for some reason, that lulz factor is outside the
+  defined range, an error will be noted and the assertion will be thrown to 
+  fail the test.
 
 
 5. Project is stored on GitHub at public repository 
@@ -63,6 +72,7 @@ Eric-Wiegman/2_Meme-sorter-and-scorer.
 ---------------------------------------------------------------------------
 6.1 The directory structure is shown below:
 
+<pre>
     │   pom.xml
     │
     ├───docs
@@ -112,7 +122,7 @@ Eric-Wiegman/2_Meme-sorter-and-scorer.
             └───java
                     DataProviderMemeExercise.java
                     TestMemeExercise.java
-
+</pre>
 
 6.2 Please note that the directory structure is important, and file/directory
     changes should **not** be made. Failure to leave the structure as is will
@@ -194,7 +204,9 @@ builds the project and retrieves plugins needed for that build. However,
  Hopefully, your setup is less fragile than mine, so you will be able to just
   run the maven command line and have it all work flawlessly. But, in case there
   is something wrong with my POM file, here are the required JARs:
+  <pre>
   a. com.googlecode.json-simple:json-simple:1.1.1
   b. org.testng:testng:6.8.8
+  </pre>
   
   And then you could run the TestNG XML Suite file found at /src/main/resources
