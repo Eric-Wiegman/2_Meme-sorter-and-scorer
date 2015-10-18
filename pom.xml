@@ -81,7 +81,7 @@
             <version>${testng.version}</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>xml-apis</groupId>
             <artifactId>xml-apis</artifactId>
             <version>${xml-apis.version}</version>
@@ -90,9 +90,9 @@
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>${selenium.version}</version>
-        </dependency>
+        </dependency>-->
     </dependencies>
-    <dependencyManagement>
+   <!-- <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>com.firefox</groupId>
@@ -117,5 +117,5 @@
                 </exclusions>
             </dependency>
         </dependencies>
-    </dependencyManagement>
+    </dependencyManagement>-->
 </project>

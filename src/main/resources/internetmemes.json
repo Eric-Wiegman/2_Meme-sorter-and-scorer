@@ -1,1 +1,20 @@
-[{"meme":"Anxiety Cat","lulz":9},{"meme":"Breading Cats","lulz":7},{"meme":"Business Cat","lulz":4},{"meme":"Ceiling Cat","lulz":6},{"meme":"Chemistry Cat","lulz":7},{"meme":"Happy Cat","lulz":8},{"meme":"Hipster Kitty","lulz":2},{"meme":"Invisible Bike Cat","lulz":8},{"meme":"Keyboard Cat","lulz":5},{"meme":"Kitlers","lulz":3}]
+{
+  "memes":
+  [
+    "Nyan Cat",
+    "Keyboard Cat",
+    "Kitlers",
+    "Hipster Kitty",
+    "Invisible Bike Cat",
+    "Happy Cat",
+    "Breading Cats",
+    "Chemistry Cat",
+    "Long Cat",
+    "Business Cat",
+    "Anxiety Cat",
+    "Serious Cat",
+    "Ceiling Cat",
+    "Lenin Cat",
+    "OMG Cat"
+  ]
+}
