@@ -17,8 +17,7 @@ public class Consts {
      * folder.
      */
     public static final String RESOURCES_FOLDER =
-            "workspace-exercise" + FILE_SEP + "src" + FILE_SEP + "main"
-                    + FILE_SEP + "resources";
+            "src" + FILE_SEP + "main" + FILE_SEP + "resources";
     /**
      * The constant INTERNET_MEME_JSON_FILE, which is the JSON file to parse
      * in this exercise.
@@ -34,6 +33,5 @@ public class Consts {
     /**
      * The constant FILEPATH, which is the path to the backup or original file.
      */
-    public static final String FILEPATH = USER_HOME + FILE_SEP + RESOURCES_FOLDER
-            + FILE_SEP;
+    public static final String FILEPATH = RESOURCES_FOLDER + FILE_SEP;
 }
